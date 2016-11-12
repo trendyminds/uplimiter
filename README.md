@@ -2,7 +2,7 @@
 
 Easily define the maximum file upload size per user group.
 
-![Screenshot of Uplimiter's settings](_demo/screengrab.png)
+<img src="_demo/screengrab.png" width="647" alt="Screenshot of Uplimiter's settings">
 
 ## Installation
 
