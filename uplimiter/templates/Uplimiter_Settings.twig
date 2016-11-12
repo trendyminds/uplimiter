@@ -1,0 +1,31 @@
+{#
+/**
+ * Uplimiter plugin for Craft CMS
+ *
+ * Uplimiter Settings.twig
+ *
+ * @author    TrendyMinds
+ * @copyright Copyright (c) 2016 TrendyMinds
+ * @link      http://trendyminds.com
+ * @package   Uplimiter
+ * @since     1.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+<h2>User Groups</h2>
+<p>
+  Set the maximum allowable file upload per user group in bytes. <strong>Note:</strong> If a user belongs to multiple groups their limit is the highest of the total groups they belong to.
+</p>
+
+{% for item in craft.uplimiter.getUserGroups() %}
+  {{ forms.textField({
+      label: item,
+      instructions: 'Maximum allowable file upload in bytes.',
+      type: 'number',
+      id: 'gid' ~ item.id,
+      name: 'gid' ~ item.id,
+      value: settings['gid' ~ item.id]})
+  }}
+{% endfor %}
