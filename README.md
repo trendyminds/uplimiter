@@ -1,4 +1,4 @@
-# <img src="_demo/logo.png" width="35" alt="Uplimiter logo">&nbsp;Uplimiter
+# <img src="_demo/icon.png" width="35" alt="Uplimiter logo">&nbsp;Uplimiter
 
 Easily define the maximum file upload size per user group.
 
