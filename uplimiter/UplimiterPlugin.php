@@ -54,8 +54,9 @@ class UplimiterPlugin extends BasePlugin
                     // Create an array of the groups the user is in and the upload limits
                     $groups = array();
 
+                    // Get the value for each user group in the plugin settings. If a user group does not have a value assigned to it, use the default maxUploadFileSize variable.
                     foreach($userGroups as $group) {
-                        $groups[] = $this->getSettings()['gid' . $group->id];
+                        $groups[] = ($this->getSettings()['gid' . $group->id]) ? $this->getSettings()['gid' . $group->id] : craft()->config->get('maxUploadFileSize');
                     }
 
                     // Find the largest value of the groups this user belongs to

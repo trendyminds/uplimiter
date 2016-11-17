@@ -1,7 +1,16 @@
 [
     {
+        "version": "1.0.1",
+        "downloadUrl": "https://github.com/trendyminds/uplimiter/archive/1.0.1.zip",
+        "date": "2016-11-17T03:18:29.199Z",
+        "notes": [
+            "[Added] Non-specified limits fallback to Craft's maxUploadFileSize"
+            "[Improved] Modified settings to include more information about various use-cases"
+        ]
+    },
+    {
         "version": "1.0.0",
-        "downloadUrl": "https://github.com/trendyminds/uplimiter/archive/master.zip",
+        "downloadUrl": "https://github.com/trendyminds/uplimiter/archive/1.0.0.zip",
         "date": "2016-11-12T03:18:29.199Z",
         "notes": [
             "[Added] Initial release"

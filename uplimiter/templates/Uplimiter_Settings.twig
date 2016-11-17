@@ -12,12 +12,15 @@
  */
 #}
 
+{% includeCssResource "uplimiter/css/Uplimiter_Style.css" %}
+
 {% import "_includes/forms" as forms %}
 
 <h2>User Groups</h2>
-<p>
-  Set the maximum allowable file upload per user group in bytes. <strong>Note:</strong> If a user belongs to multiple groups their limit is the highest of the total groups they belong to.
-</p>
+<ul class="uplimiter-list">
+  <li><strong>If a user belongs to multiple groups</strong> their limit is the highest of the total groups they belong to.</li>
+  <li><strong>If no value is assigned</strong> the user group defaults to Craft's <code>maxUploadFileSize</code> value.</li>
+</ul>
 
 {% for item in craft.uplimiter.getUserGroups() %}
   {{ forms.textField({
